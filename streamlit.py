@@ -4,10 +4,10 @@ import plotly.express as px
 
 # Example Data
 data = {
-    'market': ['Athletic Monitoring Device Adhesives', 'UV Detection', 'Postpartum Care', 'Agritech'],
-    'market_value': [8,3,7,6],
-    'barrier_to_entry': [4,2,5,8],
-    'market_maturity_stability': [4,5,8,7],
+    'market': ['Athletic Monitoring Device Adhesives', 'UV Detection', 'Postpartum Care', 'Agritech', 'Drug Administration', 'Tissue Engineering'],
+    'market_value': [8,3,7,6,6.5, 7],
+    'barrier_to_entry': [4,2,5,8,3,3],
+    'market_maturity_stability': [4,5,8,7,7,3],
 }
 df = pd.DataFrame(data)
 #df.set_index('market', inplace = True)
