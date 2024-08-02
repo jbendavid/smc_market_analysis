@@ -13,8 +13,8 @@ df = pd.DataFrame(data)
 #df.set_index('market', inplace = True)
 
 # Streamlit App Layout
-st.title("Market Analysis")
-st.subtitle("Note that these are subjective scores and that more rigid scoring metrics should be included in future iterations")
+st.title("SMC Hollister Market Analysis :chart_with_upwards_trend:")
+st.subheader("Note that these are subjective scores and that more rigid scoring metrics should be included in future iterations")
 
 x_axis = st.selectbox(
     "Select X-axis metric",
