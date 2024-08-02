@@ -14,6 +14,7 @@ df = pd.DataFrame(data)
 
 # Streamlit App Layout
 st.title("Market Analysis")
+st.subtitle("Note that these are subjective scores and that more rigid scoring metrics should be included in future iterations")
 
 x_axis = st.selectbox(
     "Select X-axis metric",
