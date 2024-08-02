@@ -38,8 +38,8 @@ bubble_size = st.selectbox(
 fig = px.scatter(df, x=x_axis, y=y_axis, size=bubble_size,
                  color='market', hover_name='market',
                  size_max=60)
-st.write("note that these are subjective scores and further iterations of this application should include more rigid evaluation metrics.")
 fig.update_layout(title=f'Market Analysis ({x_axis} vs {y_axis})',
                   xaxis_title=x_axis, yaxis_title=y_axis)
 
 st.plotly_chart(fig)
+st.write("note that these are subjective scores and further iterations of this application should include more rigid evaluation metrics.")
