@@ -14,7 +14,7 @@ df = pd.DataFrame(data)
 
 # Streamlit App Layout
 st.title("SMC Hollister Market Analysis :chart_with_upwards_trend:")
-st.subheader("Note that these are subjective scores and that more rigid scoring metrics should be included in future iterations")
+st.subheader("Choose which metrics you'd like to plot against each other.")
 
 x_axis = st.selectbox(
     "Select X-axis metric",
@@ -38,7 +38,7 @@ bubble_size = st.selectbox(
 fig = px.scatter(df, x=x_axis, y=y_axis, size=bubble_size,
                  color='market', hover_name='market',
                  size_max=60)
-
+st.write("note that these are subjective scores and further iterations of this application should include more rigid evaluation metrics.")
 fig.update_layout(title=f'Market Analysis ({x_axis} vs {y_axis})',
                   xaxis_title=x_axis, yaxis_title=y_axis)
 
